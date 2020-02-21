@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Popover
+
+To enable the build-in popover functionality remember to add popper, bootstrap (and optionally turbolinks) to your JavaScript. And trigger the popovers like so.
+
+```
+document.addEventListener("turbolinks:load", () => {
+  $('[data-toggle="popover"]').popover()
+})
+```
 
 ## Development
 

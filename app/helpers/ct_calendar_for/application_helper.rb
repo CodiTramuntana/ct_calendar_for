@@ -2,10 +2,11 @@ module CtCalendarFor
   module ApplicationHelper
     require 'uri'
     include HorizontalCalendarHelper
+    include AnnualCalendarHelper
 
     def calendar_for calendar_type, options: {}
-      if calendar_type == :anual
-
+      if calendar_type == :annual
+        annual_calendar options
       elsif calendar_type == :horizontal
         horizontal_calendar options
       end
