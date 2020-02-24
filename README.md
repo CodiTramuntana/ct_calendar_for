@@ -20,7 +20,7 @@ Or install it yourself as:
 
     $ gem install ct_calendar_for
 
-## Usage
+## Setup
 
 ### Popover
 
@@ -29,18 +29,35 @@ To enable the build-in popover functionality remember to add popper, bootstrap (
 ```
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="popover"]').popover()
-})
+  })
+  ```
+
+## Usage
+
+### Overview
+
+Call the gem from the view, and use the calendary_type parameter to choose the layout, and use the options to provide feedback to each calendary type.
+
 ```
+  <%= calendar_for :horizontal, options: {users: users} %>
+  <%= calendar_for :annual, options: {year: 2019} %>
+```
+
+### Horizontal calendar (timeline)
+
+- TODO
+
+### Annual calendar
+
+- TODO
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+- TODO: the gem is not yet available publicly
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ct_calendar_for. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/CodiTramuntana/ct_calendar_for. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -48,4 +65,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CtCalendarFor project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ct_calendar_for/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CtCalendarFor project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/CodiTramuntana/ct_calendar_for/blob/master/CODE_OF_CONDUCT.md).
