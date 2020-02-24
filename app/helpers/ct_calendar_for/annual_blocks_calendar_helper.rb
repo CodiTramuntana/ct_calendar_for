@@ -1,8 +1,8 @@
 module CtCalendarFor
-  module AnnualCalendarHelper
+  module AnnualBlocksCalendarHelper
     require 'uri'
 
-    def annual_calendar options
+    def annual_blocks_calendar options
       @start_day = options[:start_day].nil? ? :monday : options[:start_day].to_sym
       @date = options[:year].nil? ? Date.current.beginning_of_year : Date.new(options[:year].to_i)
       content_tag :div, class: "row bg-white" do
@@ -39,10 +39,6 @@ module CtCalendarFor
           content_tag :div, day.day, class: "day-inner-content text-center"
         end
       end
-    end
-
-    def complete_date(date)
-      I18n.l(date, format: "%A %e, %B, %Y")
     end
 
     def day_classes(day)

@@ -45,11 +45,42 @@ Call the gem from the view, and use the calendary_type parameter to choose the l
 
 ### Horizontal calendar (timeline)
 
-- TODO
+- Creates an horizontal calendar, limited to a range of dates.
+- It is intended to work with multiple users (or entities which respond to "name").
+- There is a built-in search feature to work ransack 'search_form_for' form builder.
 
-### Annual calendar
+#### Options
 
-- TODO
+- users: Collection of users, will add a row for each.
+- start_date: Date for the calendar to begin
+- end_date: Date for the calendar to end
+
+
+- search? : Bool, if you want the search field or not
+- search_attribute: Name of the attribute to search/filter, uses "contains" ransack filter
+- search_placeholder: String to use as search input placeholder
+- object: Object to use on the search form
+- url: path to perform the search
+
+### Annual calendar (blocks)
+
+- Creates a full year calendar into monthly bloks.
+- Uses popover functionality on each day.
+
+#### Options
+
+- year: Year to represent the calendar for.
+- start_day: (Symbol) First day of the week (:monday as default)
+
+### Annual calendar (horizontal)
+
+- Creates a full year calendar into monthly rows.
+- Uses popover functionality on each day.
+
+#### Options
+
+- year: Year to represent the calendar for.
+- start_day: (Symbol) First day of the week (:monday as default)
 
 ## Development
 
