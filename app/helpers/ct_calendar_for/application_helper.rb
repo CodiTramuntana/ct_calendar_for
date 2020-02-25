@@ -4,14 +4,18 @@ module CtCalendarFor
     include HorizontalCalendarHelper
     include AnnualBlocksCalendarHelper
     include AnnualHorizontalCalendarHelper
-
+    include MonthlyCalendarHelper
+    
     def calendar_for calendar_type, options: {}
-      if calendar_type == :annual_blocks
+      case calendar_type
+      when :annual_blocks
         annual_blocks_calendar options
-      elsif calendar_type == :annual_horizontal
+      when :annual_horizontal
         annual_horizontal_calendar options
-      elsif calendar_type == :horizontal
+      when :horizontal
         horizontal_calendar options
+      when :monthly
+        monthly_calendar options
       end
     end
 

@@ -80,6 +80,15 @@ Call the gem from the view, and use the calendary_type parameter to choose the l
 - year: Year to represent the calendar for.
 - start_day: (Symbol) First day of the week (:monday as default)
 
+### Monthly calendar
+
+- Creates a calendar displaying a full month.
+
+#### Options
+
+- month: Month to represent the calendar for.
+- start_day: (Symbol) First day of the week (:monday as default)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/CodiTramuntana/ct_calendar_for. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
