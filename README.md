@@ -1,8 +1,6 @@
 # CtCalendarFor
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ct_calendar_for`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+CodiTramuntana's CalendarFor gem is an html calendar builder, it's main goal is to build simple calendars for your views.
 
 ## Installation
 
@@ -82,9 +80,14 @@ Call the gem from the view, and use the calendary_type parameter to choose the l
 - year: Year to represent the calendar for.
 - start_day: (Symbol) First day of the week (:monday as default)
 
-## Development
+### Monthly calendar
 
-- TODO: the gem is not yet available publicly
+- Creates a calendar displaying a full month.
+
+#### Options
+
+- month: Month to represent the calendar for.
+- start_day: (Symbol) First day of the week (:monday as default)
 
 ## Contributing
 
